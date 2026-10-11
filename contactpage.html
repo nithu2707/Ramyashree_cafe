@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+        font-family: Arial, sans-serif;
+    }
+    h1{
+        background-color: rgb(218, 63, 63);
+    }
+    form .center {
+            padding: 30px 40px;
+            border: 2px solid black;
+            width: 500px;
+            margin: auto;
+        }
+        form .center div{
+             display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        button{
+            background-color: rgb(127, 250, 152);
+        }
+        button :hover{
+            right: 200px;
+        }
+        input, textarea {
+            padding: 10px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+</style>
+<body>
+<center>
+<b>
+<form action="aboutpage.html">
+ <h1>Contact Us</h1>
+ <div>
+ <label for="name">Name:</label>
+ <input type="text" name="name" placeholder="Enter your name" id="name">
+ </div>
+<br><br>
+ <div>
+ <label for="Email">Email id:</label>
+ <input type="text" name="Email" placeholder="Enter your Id" id="Email">
+ </div>
+<br><br>
+ <div>
+ <label for="Message">Message:</label>
+ <input type="textarea" name="Message" placeholder="Write your Message......" id="Message">
+ </div>
+<br><br>
+ <button type="submit">Send Message</button>
+</b>
+</form>
+</center>   
+</body>
+</html>

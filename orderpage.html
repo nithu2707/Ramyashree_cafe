@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: rgb(213, 57, 57);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        form {
+            background-color: white;
+            border: 2px solid brown;
+            width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(127, 250, 152);
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+     <h1>Order Now</h1>
+
+    <form action="thankuoage.html" method="get">
+
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="Enter mobile number" required>
+
+        <label for="food">Select Food:</label>
+        <select id="food" name="food" required>
+            <option value="">Choose an item</option>
+            <option value="Coffee">Coffee - ₹90</option>
+            <option value="Pizza">Pizza - ₹250</option>
+            <option value="Sandwich">Veg Sandwich - ₹180</option>
+            <option value="Cake">Chocolate Cake - ₹500</option>
+            <option value="Cheese Balls">Cheese Balls - ₹150</option>
+            <option value="Juice">Juice - ₹120</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity"
+               min="1" max="5" value="1" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address"
+                  rows="3" placeholder="Enter your address"
+                  required></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+            <option value="">Choose payment method</option>
+            <option value="Cash">Cash on Delivery</option>
+            <option value="UPI">UPI</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</body>
+</html>

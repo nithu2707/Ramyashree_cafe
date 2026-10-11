@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        form .center {
+            
+            padding: 30px 40px;
+            border: 2px solid black;
+            width: 500px;
+
+        }
+        form .center div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        button{
+            background-color: rgb(127, 250, 152);
+        }
+        button :hover{
+            right: 200px;
+        }
+       
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Register please!!</h1>
+    <form method="get" action="aboutpage.html">
+    <legend>Registration Form</legend>
+        <div class="center">
+        <div>
+        <label for="name">Name :</label>
+        <input type="text" min="5" placeholder="Enter your name" id="name" name="name" required>
+        </div>
+
+        <div>
+        <label for="phone">Contact Details :</label>
+        <input type="tel" placeholder="Enter your phone number" id="phone" name="phone" required>
+        </div>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    </center>
+</body>
+</html>
